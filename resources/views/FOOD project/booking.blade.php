@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="{{ asset('CSS/booking.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Book A Table</title>
-    @notifyCss
-</head>
+  </head>
 <body>
     <Header>
         <top-bar class="top-bar">
@@ -48,7 +47,6 @@
         </menuContent>
 
         <form action="{{ route('book.action') }}" method="POST">
-            <x-notify::notify />
             @csrf
           <div class="line">
            <div class="lineA">
@@ -164,6 +162,5 @@
         </div>
       </Footer>
 
-      @notifyJs
  </body>
 </html>
